@@ -11,6 +11,11 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid white;
+  background-color: #434343;
+}
+
+.navbar-scrolled {
+  background-color: #434343 !important;
 }
 
 .navbar-brand {

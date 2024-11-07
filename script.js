@@ -31,14 +31,13 @@ function toggleAccordion(id) {
 }
 
 function changeNavbarBackground() {
+  console.log("Scroll event triggered");
   const navbar = document.getElementById("navbar");
-  console.log(navbar);
-
   if (navbar) {
     if (window.scrollY > 0) {
-      navbar.style.setProperty("background-color", "#434343", "important");
+      navbar.classList.add("navbar-scrolled");
     } else {
-      navbar.style.setProperty("background-color", "transparent", "important");
+      navbar.classList.remove("navbar-scrolled");
     }
   }
 }

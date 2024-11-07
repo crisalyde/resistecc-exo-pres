@@ -31,8 +31,8 @@
 .drawer {
   position: fixed;
   top: 0;
-  left: -300px;
-  width: 280px;
+  left: -340px;
+  width: 340px;
   height: 100%;
   background-color: #333;
   transition: left 0.3s ease;
