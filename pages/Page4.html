@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Comprendre l'exercice</a>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Boite à outil</a>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Le rôle de l'observateur</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="dark-section">
+        <section class="flex-gap">
+            <div class="img-container">
+                <img style="width: 100%;" src="./../data/resisteccImage8.png" alt="resistec">
+            </div>
+            <div class="dark-section-txt ">
+                Ils vont observer vos réactions et décisions. En constante communication avec la direction de
+                l'animation
+                pour rendre compte de l'ambiance les cellules de crise, ils sont chargés de prendre des notes pour le
+                retour
+                d'expérience. Ne vous inquiétez pas de les voir écrire, il ne s'agit en aucun cas d'une évaluation. Leur
+                rôle principal est d'être pédagogue et suivant vos besoins, ils pourront intervenir pour vous
+                accompagner.
+            </div>
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| QUI SONT-ILS ?</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <section class="flex-gap">
+        <div class="img-container">
+            <img style="width: 100%;" src="./../data/resisteccImage10.png" alt="resistec">
+        </div>
+        <div style="flex: 2;">
+            <span>Les observateurs sont présents sur site avec vous pour suivre l'activité en cellule et prendre des
+                notes. Ils ne sont en aucun cas des évaluateurs, l'exercice n'est pas un audit mais bien une simulation
+                à vocation pédagogique.
+                <br><br>
+                Les observations recueillies servent à l'équipe à constituer le rapport de retour d'expérience
+                post-exercice qui sera restitué.
+            </span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 5 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| SES RESPONSABILITES</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 6 /////////////////////////////////// -->
+    <section>
+        <span>
+            Sous la responsabilité de la Direction d'Exercice, les observateurs ont trois missions :
+            <ul style="margin-left: 50px;">
+                <li style="margin-bottom: 10px;"> Ils sont en communication avec la cellule d'animation et observe le
+                    bon déroulé de l'exercice.</li>
+                <li style="margin-bottom: 10px;">Ils observent les activités au sein de la cellule de crise au travers
+                    d'indicateurs qui permettent
+                    de faire
+                    le lien avec les objectifs pédagogiques de l'exercice.</li>
+                <li style="margin-bottom: 10px;"> Garant du bon déroulé de l'exercice sur site, ils interviendront pour
+                    faire respecter le périmètre,
+                    si
+                    besoin, mais surtout il peut aussi intervenir dans la cellule de crise pour une séance de coaching.
+                </li>
+            </ul>
+            <br> <br>
+            Nous vous rappelons que l'observateur ne joue aucunement un rôle d'évaluateur et ne doit pas être vu comme
+            tel. Il joue un rôle de facilitateur entre les différentes directions de l'exercice et vous en cellule de
+            crise.
+            <br> <br>
+            Les observateurs, aussi appelé coachs, seront accompagné de personnes pouvant prendre des notes. Ces
+            personnes sont en contact avec la cellule animation, ce qui permet une adaptation de l'exercice en temps
+            réel.
+        </span>
+
+    </section>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

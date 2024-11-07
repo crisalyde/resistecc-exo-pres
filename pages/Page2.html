@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Comprendre l'exercice</div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Boite à outil
+                    </div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Les conventions d'exercice</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="dark-section">
+        <section class="flex-gap">
+            <div class="img-container">
+                <img style="width: 100%;" src="./../data/resisteccImage8.png" alt="resistec">
+            </div>
+            <div class="dark-section-txt ">
+                Les conventions d'exercice sont des règles et principes qui permettent le déroulement de l'exercice dans
+                des
+                conditions optimales et maitrisées pour les joueurs et l'équipe d'animation. De manière agile,
+                l'exercice
+                peut ainsi être adapté pour correspondre aux objectifs fixés par les sites participants.
+            </div>
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| ORGANISATION GENERALE</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <section>
+        <span>L'exercice sera rythmé par l'envoi d'injects (aussi appelés stimulis). Il s'agit d'actions réalisées par
+            l'équipe d'animation à destination des joueurs pour développer le scénario de l'exercice. Ces actions
+            prennent la forme de mails, d'appels téléphoniques, de messages sur les réseaux sociaux ou de techniques de
+            cyberattaque. Les joueurs ont à disposition un système d'information constitué de téléphones et
+            d'ordinateurs. Les ordinateurs de l'exercice sont les terminaux d'un système d'informatique entièrement
+            simulé par un cyber range constituant l'environnement numérique d'une entité fictive dont les joueurs sont
+            membres. Le cyber range offre ainsi une bulle d'exercice déconnectée du reste d'internet. Des complices
+            pourront également être présents parmi les animateurs afin d'apporter leur expertise et leur connaissance de
+            l'organisme mis en situation pour s'assurer du bon niveau de crédibilité.
+            <br> <br>
+            Pour cela, il est nécessaire de s'accorder sur des conventions d'exercice. Elles permettent de créer un
+            environnement contrôlé et sécurisé pour tester, dans notre cas, les capacités de réaction de l'organisme
+            face à une crise cyber. En d'autres termes, elles correspondent aux règles du jeu et évite tout risque de
+            débordement. Elles sont essentielles pour garantir un déroulement efficace de l'exercice.
+            <br> <br>
+            L'équipe d'animation a donc la possibilité d'adapter le scénario et le déroulement de l'exercice pour
+            répondre aux objectifs spécifiques fixés. </span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 5 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| LES OBJECTIFS DE L'EXERCICE</h2>
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// SECTION 6 /////////////////////////////////// -->
+    <section>
+        <ul>
+            <li>
+                <h3 style="font-size: 12px; margin-bottom: 5px;">Objectif pédagogique 1 : « Activation de la cellule de
+                    crise »</h3>
+                <div style="margin-left: 30px;">
+                    <span>Description : Les participants doivent activer la cellule de crise
+                        après avoir identifié des
+                        anomalies et compris la compromission d'au moins une des activités essentielles, telles que le
+                        retour du terrain, le centre d'appel ou le déclenchement des interventions.</span>
+                </div>
+
+            </li>
+            <li>
+                <h3 style="font-size: 12px; margin-bottom: 5px;">Objectif pédagogique 2 : Gestion de la crise</h3>
+                <div style="margin-left: 30px;">
+                    <span>Description : Les participants arrivent à gérer la crise d’origine
+                        cyber en mettant en œuvre une
+                        série d'actions stratégiques et techniques.</span>
+                </div>
+
+            </li>
+            <li>
+                <h3 style="font-size: 12px; margin-bottom: 5px;">Objectif pédagogique 3 : Projection et Evolution de la
+                    crise</h3>
+                <div style="margin-left: 30px;">
+                    <span>Description : Les participants arrivent à représenter l’évolution de la
+                        crise sur le long
+                        terme.</span>
+                </div>
+
+            </li>
+        </ul>
+    </section>
+    <!-- /////////////////////////////////// SECTION 6 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| PERIMETRE D'EXERCICE</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <section>
+        <span>Dans le cadre de cet exercice, seule la cellule de crise stratégique de l'organisme et le personnel
+            technique invité participent et s'organisent pour se projeter dans la gestion de crise d'un évènement cyber.
+            Tous les autres rôles, aussi bien internes et externes seront joués par la cellule d'animation. Les
+            participants sont au niveau stratégiques, ils doivent donc prendre des décisions qui doivent se transformer
+            en action à réaliser. Ces actions à réaliser doivent faire l'objet d'une demande au niveau opérationnel qui
+            sera joué par l'animation. La cellule de crise stratégique ne peut décider seule que l'action est réalisée.
+            <br> <br>
+            L'information sera partagée dans les deux sens à l'aide d'outils dédiés tels que les emails, les appels
+            téléphoniques, un réseau social et les ordinateurs terminaux.
+            <br> <br>
+            La cellule de crise (les joueurs participants) sera observée par visio ou si besoin par un ou plusieurs
+            observateurs / coachs présents en cellule de crise afin de remplir plusieurs missions : observer le bon
+            déroulement de l'exercice, observer des indicateurs en lien avec les objectifs pédagogiques.
+            <br> <br>
+            L'exercice peut être mis en pause pédagogique afin d'accompagner les participants. À cette occasion, pour
+            les besoins du projet de recherche, des mesures scientifiques peuvent être réalisées à chaud.</span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 8 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| COMMUNICATION</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 9 /////////////////////////////////// -->
+    <section>
+        <span>Toute communication, écrite ou oral, sera précédée des termes <strong>EXERCICE - EXERCICE -
+                EXERCICE</strong>. Ce rituel
+            permet de s'assurer que tous les échanges sont bien dans le cadre de l'exercice et de la simulation. Lorsque
+            vous appelez un personnage de l'annuaire, vous précisez également qui est-ce que vous cherchez à joindre.
+            Cela permet au personnage de savoir à qui vous vous adressez et ainsi se mettre dans la peau du personnage.
+            <br> <br>
+            <i> Exemple de phrase introductive d'appel : "Exercice, exercice, exercice, bonjour c'est la directrice des
+                soins, je cherche à joindre le services des urgences".</i>
+            <br> <br>
+            D'autres situations possible, où les animateurs joueront le rôle des personnes extérieurs :
+            <br>
+            <i> Exemple d'appel à la Préfecture: "Exercice, exercice, exercice, bonjour c'est le directeur du SDIS, je
+                cherche à joindre le SIDPC de la Préfecture"</i>
+            <br> <br>
+            Vous pouvez aussi communiquer entre sites mobilisés pour l'exercice à l'aide des annuaires.
+            <br>
+            <i> Exemple d'appel du CODIS à un CIS : "Exercice, exercice, exercice, bonjour, c'est le directeur du CODIS,
+                je
+                cherche à joindre le directeur du CIS, j'ai besoin de telle information..."</i></span>
+        <div style="text-align: center;margin-top: 30px;">
+            <span>
+                <strong>L'annuaire mis à votre disposition est à utiliser en
+                    première intention.
+
+                    Possibilité d'appeler une personne extérieur au jeu, après validation de l'animation, informer
+                    l'interlocuteur que c'est dans le cadre d'un exercice.</strong>
+                <br>
+                <i>Exemple d'appel hors du jeu : Le responsable RH participant au jeu qui souhaite appeler son collègue
+                    du service pour obtenir un renseignement utile sans qu'il soit impliqué dans le jeu. </i>
+
+                <br> <br>
+                <strong> Ne pas envoyer de message (mail, SMS etc.) à un contact qui ne vous a pas écrit dans le cadre
+                    de
+                    l’exercice !</strong></span>
+        </div>
+        <br><br>
+        <span><strong>Communications écrites :</strong>
+            <br>
+            + Les échanges de mails entre les joueurs sont possibles, en utilisant les adresses fournies dans
+            l'annuaire.
+            <br>
+            + Toutes les communications vers l'extérieur ou en interne ne sont pas réalisées sur les canaux habituels
+            (liste de diffusion, groupe chat, ...), envoyer la communication prévue sur les adresses mails des acteurs
+            externes qui vous seront fournies.
+            <br>
+            + Indiquer en objet la mention "EXERCICE" et dans le corps du mail pour les destinataires de la
+            communication. </span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 10 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

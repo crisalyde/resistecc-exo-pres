@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Comprendre l'exercice</div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Boite à outil
+                    </div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>La communication interne durant la crise</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+    <section>
+        <div class="img-txt-container">
+            <div class="img-container">
+                <img style="width: 100%;" src="./../data/resisteccImage19.png" alt="resistec">
+            </div>
+            <div style="flex: 3;display: flex;">
+                <span>Les conséquences d’une crise cybersécurité sont souvent visibles immédiatement : en interne, elle
+                    empêche le fonctionnement habituel des activités de la structure et en externe, elle peut devenir
+                    rapidement médiatisée et entrainer la réaction de partenaires, autorités, patients et/ou usagers,
+                    etc. Une bonne gestion de crise intègre, au cœur du dispositif, l’action de communication en interne
+                    et en externe.
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| LE PARTAGE D'INFORMATION AU SEIN DE LA CELLULE</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <section>
+        <span>1 - <strong>Assurer la maîtrise des échanges</strong> (questions, débats, partage d’informations,
+            alignement, prises de
+            décision, reformulation, etc.) à la main d’un <strong>coordinateur</strong>.
+            <br> <br>
+            2 - <strong>Assurer un partage de l’information clair, factuel et synthétique</strong> permettant d’obtenir
+            une vision
+            globale des faits.
+            <br> <br>
+            3- <strong>Assurer la vérification, la synthétisation et le tri des informations entrantes et
+                sortantes</strong> pour
+            préserver les décideurs.
+            <br> <br>
+            4 - <strong>Assurer la traçabilité des informations</strong> de manière synthétique (outillage via un
+            journal de bord, une
+            main courante, etc.).
+            <br> <br>
+            5 - <strong>Assurer la synchronisation des informations</strong> en les partageant aux bonnes personnes au
+            bon moment.
+        </span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| LA COMMUNICATION INTERNE ET EXTERNE A LA STRUCTURE</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 5 /////////////////////////////////// -->
+    <div style="background-color: rgba(67, 67, 67, 1);">
+        <section>
+            <span style="color: white;text-align: center;font-size: 14px;">Communiquer nécessite la mise en place d’une
+                stratégie de
+                communication orchestrée
+                par l’équipe
+                communicante et validée par la cellule de crise. </span>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 6 /////////////////////////////////// -->
+    <section>
+        <span>1 - <strong>Définir un message cohérent</strong> à décliner en fonction des parties prenantes
+            <br><br>
+            2- <strong>Contextualiser le(s) message(s)</strong> pour chaque partie prenante
+            <br><br>
+            3 - <strong>Trouver le média le plus adapté</strong> pour partager le message aux parties prenantes
+        </span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| COMMUNICATION ET CRISE CYBER</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 8 /////////////////////////////////// -->
+    <section><span>En temps de crise cyber il est particulièrement difficile de parvenir à communiquer. Les canaux de
+            communication peuvent être saturé, détruit, inopérant. Il faut donc innover et proposer de nouvelle
+            modalités de communication en lien avec la stratégie de l'établissement dans sa gestion de crise.
+            <br><br>
+            Par exemple, un document synthétique peut être édité, à une certaine fréquence, pour informer largement
+            l'établissement et l'ensemble des agents des nouvelles dispositions d'organisation.
+            <br><br>
+            Dans le cadre d'une crise cyber, les moyens de communication habituels, notamment la messagerie, peuvent
+            être impactés. Il faudra donc pouvoir s'appuyer sur des solutions externes, tel que Team par exemple, pour
+            rétablir des liens et des canaux de communication, particulièrement utile à la gestion de crise. </span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 9 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

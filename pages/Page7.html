@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Comprendre l'exercice</a>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Boite à outil</a>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Déroulé exercice</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="flex-gap">
+            <div style="flex: 2; display: flex;align-items: center;">
+                <img style="width: 100%;" src="./../data/resisteccImage14.png" alt="resistec">
+            </div>
+            <div style="flex: 2;display: flex;align-items: center;">
+                <span style="font-size: 16px;font-weight: bold;">L'exercice commence à 9h par un briefing et se termine
+                    à
+                    12h30 après un
+                    debriefing.
+                </span>
+            </div>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section>
+            <h2 style="font-size: 12px;margin-bottom: 10px;">Une demie journée d'exercice RéSISTeCC, comment cela va se
+                dérouler ? </h2>
+            <div style="margin-left: 40px;">
+                <span>+ Vous occupez la fonction de joueur et vivrez la mise en place de la cellule de crise en
+                    condition
+                    réelle. Vous allez donc évoluer au rythme de la cellule de crise au fil d'un scénario
+                    contextualisant.
+                    <br><br>
+                    + Le scénario est prévu pour être déroulé pendant 2h30 au maximum avec des phases d'intensité
+                    différentes
+                    mais qui nécessitera une prise en charge et une mobilisation plus ou moins importante de la cellule
+                    de
+                    crise.
+                    <br><br>
+                    + Les joueurs sont libres de s'organiser comme ils le souhaitent au sein de leur cellule de crise,
+                    dans
+                    le
+                    cadre imposé des conventions d'exercice. </span>
+            </div>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <div class="dark-section">
+        <section style="display: flex;align-items: center;justify-content: center;">
+            <h1 style="color: #fece10;">Le déroulé</h1>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 5 /////////////////////////////////// -->
+    <section style="display: flex;flex-direction: column;gap: 15px;">
+        <div class="tab-container">
+            <div style="flex: 5;display: flex;justify-content: space-between;">
+                <span style="flex: 2;">8h30</span>
+                <span style="flex: 4;font-size: 14px;font-weight: bold;">Accueil des participants</span>
+            </div>
+            <span style="flex: 4;">Arrivée des participants et de l'équipe d'exercice</span>
+        </div>
+        <div class="tab-container">
+            <div style="flex: 5;display: flex;justify-content: space-between;">
+                <span style="flex: 2;">9h-9h30</span>
+                <span style="flex: 4;font-size: 14px;font-weight: bold;">Briefing</span>
+            </div>
+            <span style="flex: 4;">Présentation de l'exercice, des objectifs, des conventions et du contexte du
+                scenario</span>
+        </div>
+        <div class="tab-container">
+            <div style="flex: 5;display: flex;justify-content: space-between;">
+                <span style="flex: 2;">9h30-12h</span>
+                <span style="flex: 4;font-size: 14px;font-weight: bold;">Déroulement de l'exercice</span>
+            </div>
+            <span style="flex: 4;">Phase de jeu qui met en relation les participants et les animateurs. Les observateurs
+                coachs peuvent animer des pauses pédagogiques en fonction des besoins de l'exercice</span>
+        </div>
+        <div class="tab-container">
+            <div style="flex: 5;display: flex;justify-content: space-between;">
+                <span style="flex: 2;">12h00</span>
+                <span style="flex: 4;font-size: 14px;font-weight: bold;">FIN DE L'EXERCICE</span>
+            </div>
+            <span style="flex: 4;">Fin de la simulation. La fin de l'exercice sera décidée par le directeur de
+                l'exercice et sera annoncée à l'ensemble des joueurs</span>
+        </div>
+        <div class="tab-container">
+            <div style="flex: 5;display: flex;justify-content: space-between;">
+                <span style="flex: 2;">12h-12h30</span>
+                <span style="flex: 4;font-size: 14px;font-weight: bold;">Debriefing à chaud</span>
+            </div>
+            <span style="flex: 4;">Un temps de partage des ressentis et des réflexions suscités par l'exercice sera
+                organisé pour les joueurs dans leurs cellules respectives.
+                <br><br>
+                Ce temps sera animé par les coachs et animateurs et prend la forme d'un tour de table permettant à
+                chacun de verbaliser son expérience vécue.</span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 2; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 2; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 2; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

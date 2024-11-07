@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Comprendre l'exercice</div>
+                    <img class="dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Boite à outil
+                    </div>
+                    <img class="dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Le rôle des joueurs en cellule de crise</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="dark-section">
+        <section class="flex-gap">
+            <div class="img-container">
+                <img style="width: 100%;" src="./../data/resisteccImage8.png" alt="resistec">
+            </div>
+            <div class="dark-section-txt ">
+                Les joueurs sont réunis pour jouer les rôles de personnages clés d’une cellule de crise. L'objectif est
+                de
+                participer à une mise en situation contextualisée et animée par une équipe d'animation. Les joueurs
+                participent à la mise en place de la gestion de crise en jouant et en interagissant entre eux mais aussi
+                avec des agents extérieurs dont le rôle est tenu par des membres de l’équipe d’animation.
+            </div>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| ACCOMPAGNEMENT DES JOUEURS </h2>
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <section class="flex-gap">
+        <div class="img-container">
+            <img style="width: 100%;" src="./../data/resisteccImage9.jpg" alt="resistec">
+        </div>
+        <div style="flex: 2;">
+            <span>Les joueurs disposent de ce site internet qui leur permet d'obtenir toutes les informations
+                nécessaires à la tenue de l'exercice.
+                <br><br>
+                Les joueurs peuvent s'appuyer sur leur propres documentation.
+                <br><br>
+                Par ailleurs, les joueurs seront accompagnés par un coach-observateur dans chaque cellule de crise. Il
+                sera leur interlocuteur privilégié durant l'exercice et le lien avec les directions de l'exercice.
+            </span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 5 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| LE RÔLE DES JOUEURS</h2>
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// SECTION 6 /////////////////////////////////// -->
+    <section><span>Les joueurs sont des membres des sites participants, qui réalisent l’exercice en cellule de crise.
+            Ils reçoivent des injects (appels, sms, mails…) et prennent des décisions pour gérer la crise. Les joueurs
+            sont libres de gérer leurs espaces, d'utiliser les ressources matérielles utiles, de gérer leur temps et
+            leur rotation. Les différents plans et l'ensemble des procédures existantes, que les joueurs jugeront utiles
+            d'utiliser, peuvent être appliquées et éprouvées dans le cadre de cet exercice.
+            <br><br>
+            Afin de favoriser le bon déroulement de l'exercice, il est important que le scénario soit pris et accepté
+            tel quel. Il leur est demandé de s’impliquer autant qu’ils le feraient dans la vie réelle.
+            <br><br>
+            Pour que l'exercice réponde aux objectifs fixés et que le périmètre de jeu soit maitrisé, des conventions
+            d'exercice sont mises en place. Celles-ci encadrent notamment les échanges par téléphone et par mail.
+            <br><br>
+            Le réalisme peut être limité par l’aspect artificiel de l’exercice. Si certaines incohérences sont
+            constatées, les points d'amélioration seront partagés à l'issue de l’exercice (débrief à chaud). Cependant,
+            cela ne doit pas empêcher les joueurs de poursuivre le jeu, bien au contraire même si parfois non réaliste
+            la contextualisation du scénario permet tout de même d'apporter les réflexions essentielles.
+            <br><br>
+            Le côté fictif de l'événement ne doit pas affranchir l'organisme d'utiliser l'ensemble des processus et
+            règles de confidentialité en place.
+            <br><br>
+            Les joueurs, en complément de la réception des injects, sont libres de prendre toutes les initiatives utiles
+            pour passer à l'action et développer/anticiper la réponse qui leur paraîtrait la plus adaptée. Les joueurs
+            pourront prendre le temps nécessaire pour effectuer les tâches notamment pour la qualification de la crise,
+            l'état des lieux, la prise de contact avec les services, l'estimation d'un nombre de patients à transférer
+            par exemple, ou le nombre d'agents mobilisés sur les réalités RH. </span></section>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

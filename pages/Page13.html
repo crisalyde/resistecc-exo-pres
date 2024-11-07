@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../pdf.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Comprendre l'exercice</div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Boite à outil
+                    </div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Pour aller plus loin sur la cyber</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+    <div class="dark-section">
+        <section>
+            <h2 style="text-align: center;color: #fece10;">Ressources ANSSI</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="flex-gap">
+
+            <a href="https://drive.google.com/file/d/19gWwJ3vqdnpE9xgoxxphB9vbs57tvxeY/view" target="_blank"
+                class="pdf-link" rel="noopener noreferrer">
+                <div class="image-container">
+                    <iframe src="./../data/pdf1.pdf#toolbar=1&navpanes=0&scrollbar=0"
+                        style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <div class="overlay">
+                    <span class="arrow">&#8594;</span>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1UW8vp9SzgKLFOqBD23DyeUSH4TLUN0qd/view" target="_blank"
+                class="pdf-link" rel="noopener noreferrer">
+                <div class="image-container">
+                    <iframe src="./../data/pdf2.pdf#toolbar=1&navpanes=0&scrollbar=0"
+                        style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <div class="overlay">
+                    <span class="arrow">&#8594;</span>
+                </div>
+            </a>
+            <a href="https://drive.google.com/file/d/1au7wqVBQJtIF1BYQjTnmwEA7wzVCbKK0/view" target="_blank"
+                class="pdf-link" rel="noopener noreferrer">
+                <div class="image-container">
+                    <iframe src="./../data/pdf3.pdf#toolbar=1&navpanes=0&scrollbar=0"
+                        style="width: 100%; height: 100%; border: none;"></iframe>
+                </div>
+                <div class="overlay">
+                    <span class="arrow">&#8594;</span>
+                </div>
+            </a>
+
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+    <div class="dark-section">
+        <section>
+            <h2 style="text-align: center;color: #fece10;">La cyber : Un sujet d'actualité </h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="flex-gap">
+            <div style="flex:1;display: flex;flex-direction: column;">
+                <div>
+                    <a href="https://drive.google.com/file/d/16X-hG6MNmYaMW2EVUQPy980Qc3ORYXVJ/view" target="_blank"
+                        class="pdf-link" rel="noopener noreferrer">
+                        <div class="image-container">
+                            <iframe src="./../data/pdf4.pdf#toolbar=1&navpanes=0&scrollbar=0"
+                                style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <div class="overlay">
+                            <span class="arrow">&#8594;</span>
+                        </div>
+                    </a>
+                </div>
+                <span style="margin-top:20px;text-align: center;padding: 0 20px;">Le gouvernement s'engage à renforcer
+                    sa
+                    stratégie de
+                    cybersécurité des
+                    établissements de santé
+                    (1/2)</span>
+            </div>
+
+
+            <div style="flex:1;display: flex;flex-direction: column;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/MbHKr70dHvk" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen width="100%" height="315">
+                    </iframe>
+                </div>
+                <span style="margin-top:20px;text-align: center;padding: 0 20px;">Docteur Jean Vabre partage son retour
+                    d'expérience sur la cyberattaque du CH de Dax survenue en 2021
+                </span>
+            </div>
+            <div style="flex:1;display: flex;flex-direction: column;">
+                <div>
+                    <a href="https://drive.google.com/file/d/1AEg2ziF7BbQEoxubZdi8GuwSCBWJ3BYB/view" target="_blank"
+                        class="pdf-link" rel="noopener noreferrer">
+                        <div class="image-container">
+                            <iframe src="./../data/pdf5.pdf#toolbar=1&navpanes=0&scrollbar=0"
+                                style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <div class="overlay">
+                            <span class="arrow">&#8594;</span>
+                        </div>
+                    </a>
+                </div>
+                <span style="margin-top:20px;text-align: center;padding: 0 20px;">Le gouvernement poursuit sa stratégie
+                    de
+                    renforcement de
+                    la cybersécurité des
+                    établissements de santé
+                    (2/2)</span>
+            </div>
+
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="flex-gap">
+            <div style="flex:1;display: flex;flex-direction: column;">
+                <div>
+                    <a href="https://drive.google.com/file/d/1amX-UiozYHwdqNXPASgdjShD9cBxTWI5/view" target="_blank"
+                        class="pdf-link" rel="noopener noreferrer">
+                        <div class="image-container">
+                            <iframe src="./../data/pdf6.pdf#toolbar=1&navpanes=0&scrollbar=0"
+                                style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <div class="overlay">
+                            <span class="arrow">&#8594;</span>
+                        </div>
+                    </a>
+                </div>
+                <span style="margin-top:20px;text-align: center;padding: 0 20px;">Le rôle de l'assurance cyber</span>
+            </div>
+            <div style="flex:1;display: flex;flex-direction: column;">
+                <div>
+                    <a href="https://drive.google.com/file/d/1dy2ikB-w1uL1K8D6RjbKJ4u2c2ajbN1G/view" target="_blank"
+                        class="pdf-link" rel="noopener noreferrer">
+                        <div class="image-container">
+                            <iframe src="./../data/pdf7.pdf#toolbar=1&navpanes=0&scrollbar=0"
+                                style="width: 100%; height: 100%; border: none;"></iframe>
+                        </div>
+                        <div class="overlay">
+                            <span class="arrow">&#8594;</span>
+                        </div>
+                    </a>
+                </div>
+                <span style="margin-top:20px;text-align: center;padding: 0 20px;">Obligation des établissements de santé
+                    à
+                    réaliser des exercices de crise cyber en 2023</span>
+            </div>
+            <div style="flex:1;display: flex;flex-direction: column;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/b2sGJs9JHgU" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <span style="text-align: center;padding: 0 20px;">Les hôpitaux face aux cyberattaques
+                </span>
+            </div>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 9 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

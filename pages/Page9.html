@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Comprendre l'exercice</a>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Boite à outil</a>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Organisation des cellules de crises</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| L'OBJECTIF D'UNE CELLULE DE CRISE</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <section>
+        <div class="img-txt-container">
+            <div class="img-container">
+                <img style="width: 100%;" src="./../data/resisteccImage17.jpg" alt="resistec">
+            </div>
+            <div style="flex: 1;">
+                <span>Il est important de comprendre qu'une cellule de crise n'est pas un lieu ou une instance. Il
+                    s'agit d'un groupe d'individus qualifiés se réunissant pour collecter, analyser et prendre des
+                    mesures pour réduire l'intensité d'une crise. Les raisons qui poussent un groupe d'individus à se
+                    trouver en situation de crise et à mettre en œuvre un organisation particulière sont les suivantes :
+                    <ul style="margin-left: 30px;margin-top: 10px;margin-bottom: 10px;">
+                        <li style="margin-bottom: 5px;"> Pas de réponse existante face à une situation (ou réponse
+                            existante mais non adaptée)</li>
+                        <li style="margin-bottom: 5px;"> Dépassement capacitaire</li>
+                        <li style="margin-bottom: 5px;"> Pas ou peu d'expérience face à la situation</li>
+                    </ul>
+
+                    Le principal intérêt dans la formation d'une cellule de crise est de raccourcir les processus
+                    décisionnels et informationnels. Elle peut se passer dans une salle, à distance, avec peu ou
+                    beaucoup de personnes, sur des sujets très variés.
+                </span>
+            </div>
+        </div>
+        <span>Une cellule ou sous-cellule doit avoir un objectif clair et les membres concourent à un but commun :
+            <strong> construire une réponse pour lesquels il n'y en avait pas ou pour lesquels la réponse initialement
+                prévue n'est plus adaptée.</strong></span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| Proposition de schéma organisationnel en cas de cyberattaque</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <section style="display: flex;flex-direction: column;gap: 20px;">
+        <div style="display: flex;flex-direction: column;align-items: center;gap: 10px;">
+            <h3 style="font-size: 16px;text-align: center;">L'apparition de ce nouveau type de crise qu'est la
+                cyberattaque,
+                nous oblige à
+                repenser le schéma
+                organisationnel. Les enseignements des précédentes cyberattaques majeures nous ont permis d'aboutir au
+                schéma proposé ci-dessous.</h3>
+            <span style="text-align: center;">Les schémas présents ci-dessous sont une proposition d'organisation, à
+                vous de
+                trouver l'organisation qui
+                convient.</span>
+        </div>
+        <img style="width: 100%;" src="./../data/resisteccImage18.png" alt="resistecc">
+        <div>
+            <span><strong>La cellule de crise décisionnelle</strong> se place au niveau stratégique. Elle définit la
+                marche à suivre,
+                prend les décisions structurantes et cherche à assurer au maximum la continuité d'activité en s'appuyant
+                sur les recommandations et l'expertise des cellules opérationnelles.
+                <br><br>
+                Les cellules de crise dites "Opérationnelles" <strong>(Production, Support et DSI)</strong> sont
+                composées de membres
+                davantage terrains, experts techniques de leur domaine de compétence, aussi bien santé que DSI.
+                <br><br>
+                Les cellules peuvent se <strong>scinder en sous-cellules</strong> pour davantage d'agilité et de
+                souplesse.</span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

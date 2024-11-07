@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Comprendre l'exercice</a>
+                    <img class="dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <a class="navbar-link" href="about.html">Boite à outil</a>
+                    <img class="dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Simulation de la pression médiatique</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| WEEZER, C'EST QUOI ?</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <div style="background-color: rgba(67, 67, 67, 1)">
+        <section>
+            <div style="text-align: center;font-size: 16px;color: #fece10;line-height: 24px;">Les réseaux sociaux sont
+                devenus un lieu
+                incontournable
+                d’échanges
+                d’information en temps réel. Lors d’un
+                événement indésirable, ils se transforment bien souvent en caisse de résonance : afflux de messages,
+                réactions négatives, atteinte à l’image de la structure. Mieux vaut s’y être préparé en conditions
+                réelles.
+                <br><br>
+                ▶︎ C’est ce que propose WEEZER !
+            </div>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <section class="flex-gap">
+        <div class="img-container">
+            <img style="width: 100%;" src="./../data/resisteccImage12.png" alt="resistec">
+        </div>
+        <div style="flex: 2;">
+            <span>Une plateforme de simulation des réseaux sociaux est mise à votre disposition. La plateforme Weezer
+                réplique Twitter. Crisalyde développe cette plateforme depuis plusieurs années afin de fournir aux
+                joueurs une pression médiatique simulée au plus proche de la réalité en cas de crise.
+                <br><br>
+                La plateforme est accessible au lien suivant : <a target="_blank" style="color: #0562c1;"
+                    href="https://weezer.fr/APHP/auth/login">https://weezer.fr/APHP/auth/login</a>
+                <br><br>
+                Les codes d'accès vous seront fournis au début de l'exercice. Ces codes sont génériques et peuvent
+                supporter de nombreuses connexions simultanées. Ils répliquent les comptes officiels des différents
+                sites.
+            </span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| LES GRANDES FONCTIONNALITES</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <section class="flex-gap">
+        <div class="img-container">
+            <img style="width: 100%;" src="./../data/resisteccImage13.png" alt="resistec">
+        </div>
+        <div style="flex: 2;">
+            <div style="font-size: 12px;margin-bottom: 5px;font-weight: bold;">WEEZER reprend les grands principes de
+                TWITTER :</div>
+            <div style="margin-left: 40px;">
+                <span>
+                    Le fil d’actualité
+                    <br>
+                    Le compte
+                    <br>
+                    Le tweet / weeze
+                    <br>
+                    les mentions @
+                    <br>
+                    Les hashtags #
+                    <br>
+                    Les tendances
+                    <br>
+                    Le retweet / reweeze
+                    <br>
+                    “Répondre”
+                    <br>
+                    Le like
+                    <br>
+                    La Messagerie Privée</span>
+            </div>
+            <div style="font-size: 12px;margin-bottom: 5px;font-weight: bold;margin-top: 5px;">Weezer est une
+                plateforme fermée, seuls
+                les joueurs de l'exercice ont les accès. </div>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

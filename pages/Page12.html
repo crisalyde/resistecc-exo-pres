@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../accordion.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Comprendre l'exercice</div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Boite à outil
+                    </div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Le glossaire de la cyber</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+
+
+    <div style="background-color: #fece10">
+        <section style="display:flex;flex-direction: column;">
+            <div>
+                <div class="accordion" onclick="toggleAccordion(1)">
+                    <div class="accordion-title">Active Directory (AD)</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-1">
+                    Base de données permettant de mettre en lien les utilisateurs du système d'information avec les
+                    ressources
+                    réseau dont ils ont besoin pour mener à bien leur mission. Cet annuaire contient notamment les
+                    utilisateurs
+                    et
+                    les ordinateurs qui le composent, ainsi que les différentes autorisations d'accès aux ressources.
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(2)">
+                    <div class="accordion-title">Administrateur (admin)</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-2">
+                    Administre et assure le fonctionnement et l'exploitation d'un ou plusieurs éléments matériels ou
+                    logiciels (outils, réseaux, bases de données, messagerie, ...) de l’organisation. Veille à la
+                    cohérence,
+                    à l'accessibilité et à la sécurité des informations.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(3)">
+                    <div class="accordion-title">Chiffrement</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-3">
+                    Désigne la conversion des données depuis un format lisible dans un format codé. Les données
+                    chiffrées ne
+                    peuvent être lues ou traitées qu'après leur déchiffrement.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(4)">
+                    <div class="accordion-title">Crise</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-4">
+                    Lorsque le répertoire de réponses d'une organisation n'est plus adapté pour faire face à l'événement
+                    qui
+                    la menace.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(5)">
+                    <div class="accordion-title">Cyber-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-5">
+                    Le préfixe “cyber” est relatif à l'environnement informatique et aux activités rendues possibles par
+                    les
+                    technologies du numérique et d’Internet.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(6)">
+                    <div class="accordion-title">Cyberattaque-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-6">
+                    Tout acte malveillant portant atteinte à un système d’information, pour des motivations d’ordre
+                    politique, économique et/ou personnel.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(7)">
+                    <div class="accordion-title">Hameçonnage (ou phishing)-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-7">
+                    Technique de fraude sur Internet qui consiste à envoyer un message destiné à amener une personne à
+                    se
+                    connecter sur un site dans le but d'obtenir des renseignements confidentiels (mot de passe,
+                    informations
+                    bancaires…) afin d'usurper l'identité de la victime.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(8)">
+                    <div class="accordion-title">Cyberattaque-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-8">
+                    Tout acte malveillant portant atteinte à un système d’information, pour des motivations d’ordre
+                    politique, économique et/ou personnel.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(9)">
+                    <div class="accordion-title">Ingénierie sociale-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-9">
+                    Méthode qui repose sur l’interaction humaine pour tromper l’utilisateur et contourner les procédures
+                    de
+                    sécurité afin d’accéder à des informations sensibles, généralement protégées.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(10)">
+                    <div class="accordion-title">Isolement-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-10">
+                    Procédure de cloisonnement ou de déconnexion de systèmes informationnels du réseau Internet ou du
+                    réseau
+                    Intranet à la suite d’une cyberattaque pour en éviter sa propagation.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(11)">
+                    <div class="accordion-title">Maliciel (ou malware)-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-11">
+                    Type de logiciel malveillant dans lequel n’importe quel fichier ou programme peut être utilisé pour
+                    porter préjudice à l’utilisateur d’un ordinateur, que ce soit par un vers, un virus, un cheval de
+                    Troie
+                    ou un logiciel espion.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(12)">
+                    <div class="accordion-title">Point de situation-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-12">
+                    Prend la forme d’une synthèse écrite et/ou orale visant à informer les parties prenantes et les
+                    décideurs sur l’état de compréhension d’un incident, de ses impacts et de l’avancée des opérations
+                    de
+                    remédiation.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(13)">
+                    <div class="accordion-title">Poste de travail-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-13">
+                    Terminal (ordinateur, tablette, etc.) d'accès au système d'information de l'organisation. Il permet
+                    à un
+                    utilisateur d'accéder aux ressources d'une organisation (applications, périphériques, réseaux) pour
+                    accomplir les tâches qu'il lui incombe.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(14)">
+                    <div class="accordion-title">Rançongiciel (ou ransomware)-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-14">
+                    Contraction des mots "rançon" et "logiciel", un rançongiciel est par définition un programme
+                    malveillant
+                    dont le but est d’obtenir de la victime le paiement d’une rançon. Pour y parvenir, le rançongiciel
+                    empêche l’utilisateur d’accéder à ses données en les chiffrant, puis lui indique les instructions
+                    utiles
+                    au paiement de la rançon en échange de la restitution de ses données.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(15)">
+                    <div class="accordion-title">Remédiation-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-15">
+                    Processus de limitation des effets de l’incident sur les SI.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(16)">
+                    <div class="accordion-title">Sauvegarde-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-16">
+                    Opération qui consiste à dupliquer les données contenues dans un système informatique sur un support
+                    indépendant. Elle a pour but de mettre en sécurité des informations et de pallier les potentielles
+                    pannes matérielles, infections par un logiciel malveillant, ou encore suppression volontaire ou
+                    fortuite
+                    de données.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(17)">
+                    <div class="accordion-title">Scénario-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-17">
+                    Raconte l’histoire de l’exercice de manière littéraire, constitue une description de l’ensemble de
+                    la
+                    situation de crise qui touche les différents sites participants à l'exercice.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(18)">
+                    <div class="accordion-title">Serveur-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-18">
+                    Désigne le rôle joué par un appareil matériel destiné à offrir des services à des clients en réseau
+                    Internet ou intranet.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(19)">
+                    <div class="accordion-title">Serveur de fichier-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-19">
+                    Serveur utilisé pour le stockage et la gestion des fichiers et des dossiers utilisateurs qui sont
+                    généralement partagés dans des bases de données.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(20)">
+                    <div class="accordion-title">Système d’information (SI)-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-20">
+                    Elément central d’une organisation. Il permet aux différents acteurs de véhiculer des informations
+                    et de
+                    communiquer grâce à un ensemble de ressources matérielles, humaines et logicielles. Un SI permet de
+                    créer, collecter, stocker, traiter, modifier des informations sous divers formats.
+                </span>
+            </div>
+            <div>
+                <div class="accordion" onclick="toggleAccordion(21)">
+                    <div class="accordion-title">VPN (Réseau privé virtuel)-</div>
+                    <div class="arrow">&#9660;</div>
+                </div>
+                <span class="accordion-content" id="accordion-content-21">
+                    Logiciel permettant d'établir une connexion chiffrée et sécurisée entre un ordinateur et Internet.
+                </span>
+            </div>
+
+
+        </section>
+    </div>
+
+    <!-- /////////////////////////////////// SECTION 9 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

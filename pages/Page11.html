@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Comprendre l'exercice</div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Boite à outil
+                    </div>
+                    <img class="dropdown-arrow" src="./../../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Les points de situation</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| OBJECTIF </h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <section>
+        <span>Le point de situation est indispensable pour que chacun comprenne l'état d'avancement des mesures
+            déployées individuellement dans le cadre de l'ouverture d'une cellule de gestion de crise.
+            <br><br>
+            L'objectif d'un point de situation est d'amener le collectif à une conscience partagée des actions
+            enclenchées. Faire un point de situation revient à construire une représentation de la crise.
+            <br><br>
+            Le point de situation permet également de conforter le décideur dans ses options stratégiques retenues, ou
+            de modifier l'orientation de ces dernières.</span>
+    </section>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| MISE EN OEUVRE</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <section style="display: flex;flex-direction: column;align-items: center;">
+        <div>
+            <span>La fréquence des points de situation est fixée par le coordinateur de la cellule de crise. C'est
+                également
+                ce dernier qui les animera.
+                <br><br>
+                <strong> Quelques exemples de moments opportuns pour réaliser un point de situation :</strong>
+                <br>
+                <ul style="margin-left: 50px;">
+                    <li style="margin: 5px 0;"> A l'activation de la cellule de crise, lorsque tous les membres sont
+                        réunis, pour conforter le
+                        "point zéro"
+                        et établir les règles de fonctionnement au sein de la cellule.</li>
+                    <li style="margin: 5px 0;"> Lors de la rotation des membres en cellule de crise, en plus de la
+                        passation des consignes.</li>
+                    <li style="margin: 5px 0;">
+                        Sur commande pour préparer les points de situation demandés par les autorités ou par le
+                        décisionnaire.</li>
+                </ul>
+
+
+
+                <br><br> <br>
+                <strong>Il existe différentes méthodologies pour faire un point de situation :</strong>
+
+                <br><br>
+                <strong>Proposition n°1 :</strong>
+                <br>
+                Répondre aux questions :
+
+                <ul style="margin-left: 50px;">
+                    <li style="margin: 5px 0;"> "D'où je viens ?" : quelles sont les actions qui ont été réalisées
+                        depuis le
+                        début de la crise.</li>
+                    <li style="margin: 5px 0;"> "Où j'en suis ?" : quelles sont les actions en cours et les nouveaux
+                        éléments à disposition.</li>
+                    <li style="margin: 5px 0;">
+                        "Où je vais ?" : quelles sont les actions proposées au vue de l'évolution du contexte et pour
+                        répondre aux
+                        objectifs fixés par le décideur.</li>
+                </ul>
+
+
+                <br><br>
+                <strong> Proposition n°2 :</strong>
+                <br>
+                Assurer une trace écrite des points de situation. Il est possible d'établir un modèle prédéfini, qu'il
+                vous
+                suffira de compléter. Vous pouvez vous référer à l'exemple ci-dessous :
+            </span>
+        </div>
+
+        <div class="table-container">
+            <img width="100%" style="margin: 10px 0;" src="./../data/resisteccImage20.png" alt="resistecc">
+            <span>
+                <ul>
+                    <li style="margin: 5px 0;"><strong>Point de situation n°</strong> : notez le numéro du point de
+                        situation, car vous
+                        serez amener à en faire plusieurs dans la journée (au minimum trois).</li>
+                    <li style="margin: 5px 0;"> <strong>Date et Heure</strong> : quand a eu lieu le point de situation ?
+                    </li>
+                    <li style="margin: 5px 0;">
+                        <strong>Contexte</strong> : rappel du contexte de l'événement en deux ou trois lignes (son
+                        périmètre, sa
+                        typologie, ses impacts, etc.).
+                    </li>
+                    <li style="margin: 5px 0;">
+                        <strong>Actions en cours</strong> : quelles actions sont encore en cours ou à faire.
+                    </li>
+                    <li style="margin: 5px 0;">
+                        <strong>Actions réalisées</strong> : quelles actions ont été accomplies.
+                    </li>
+                    <li style="margin: 5px 0;">
+                        <strong>Arbitrages</strong> - vigilances : quels risques identifiés / anticipés au vue des
+                        nouveaux éléments portés à notre connaissance.
+                    </li>
+                    <li style="margin: 5px 0;">
+                        <strong>Suites données par le décisionnaire</strong> : reporter dans cette case les décisions
+                        prises par le décisionnaire à la fin du point de situation (seule case à ne pas remplir en amont
+                        du point).
+                    </li>
+                </ul>
+            </span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 9 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>

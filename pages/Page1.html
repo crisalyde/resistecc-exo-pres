@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../index.css">
+    <link rel="stylesheet" href="./../header.css">
+    <link rel="stylesheet" href="./../drawer.css">
+</head>
+
+<body>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////// -->
+    <nav id="navbar" class="navbar">
+        <div class="navbar-brand">
+            <a href="./../index.html"><img class="navbar-logo" src="./../data/logo2.png" alt="logo"></a>
+            <span class="navbar-title">Site de l'exercice</span>
+        </div>
+        <div class="navbar-links">
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./../index.html">Accueil</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Comprendre l'exercice</div>
+                    <img class="dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                    <a href="./Page2.html">Conventions d'exercice</a>
+                    <a href="./Page3.html">Rôle des joueurs</a>
+                    <a href="./Page4.html">Rôle de l'observateur</a>
+                    <a href="./Page5.html">Rôle de la cellule animation</a>
+                    <a href="./Page6.html">Weezer pression médiatique</a>
+                </div>
+            </div>
+            <div class="dropdown-toggle">
+                <a class="navbar-link" href="./Page7.html">Déroulé de l'exercice</a>
+            </div>
+            <div class="dropdown">
+                <div class="dropdown-toggle">
+                    <div class="navbar-link">Boite à outil
+                    </div>
+                    <img class="dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                </div>
+                <div class="dropdown-content">
+                    <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                    <a href="./Page9.html">Organisation des cellules</a>
+                    <a href="./Page10.html">La communication interne durant la crise</a>
+                    <a href="./Page11.html">Les points de situation</a>
+                    <a href="./Page12.html">Glossaire de la cyber</a>
+                    <a href="./Page13.html">Pour aller plus loin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /////////////////////////////// MENU RESPONSIVE ////////////////////////////// -->
+    <button class="burger-button" onclick="toggleDrawer()">☰</button>
+    <div class="drawer-background" id="drawer-background" onclick="toggleDrawer()"></div>
+    <div class="drawer" id="drawer">
+        <button class="close-button" onclick="toggleDrawer()">×</button>
+        <nav class="drawer-nav">
+            <div class="drawer-brand">
+                <a href="./../index.html"><img class="drawer-logo" src="./../data/crisalyde-vertical-white.png"
+                        alt="logo"></a>
+            </div>
+            <div class="drawer-links">
+                <div class="drawer-link">
+                    <a href="./../index.html">Accueil</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Comprendre l'exercice</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page1.html">Comprendre lexercice Résistecc</a>
+                        <a href="./Page2.html">Conventions d'exercice</a>
+                        <a href="./Page3.html">Rôle des joueurs</a>
+                        <a href="./Page4.html">Rôle de l'observateur</a>
+                        <a href="./Page5.html">Rôle de la cellule animation</a>
+                        <a href="./Page6.html">Weezer pression médiatique</a>
+                    </div>
+                </div>
+                <div class="drawer-link">
+                    <a href="./Page7.html">Déroulé de l'exercice</a>
+                </div>
+                <div class="drawer-dropdown">
+                    <div class="drawer-dropdown-toggle" onclick="toggleDropdown(this)">
+                        <div class="drawer-link-text">Boite à outil</div>
+                        <img class="drawer-dropdown-arrow" src="./../data/arrow-down.png" alt="arrow-down">
+                    </div>
+                    <div class="drawer-dropdown-content">
+                        <a href="./Page8.html">La cellule de crise face à la cyber attaque</a>
+                        <a href="./Page9.html">Organisation des cellules</a>
+                        <a href="./Page10.html">La communication interne durant la crise</a>
+                        <a href="./Page11.html">Les points de situation</a>
+                        <a href="./Page12.html">Glossaire de la cyber</a>
+                        <a href="./Page13.html">Pour aller plus loin</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- /////////////////////////////////// BANDEAU /////////////////////////////////// -->
+    <header class="bandeau">
+        <img src="./../data/header.jpg" alt="header">
+        <h1>Comprendre l'exercice RéSISTeCC</h1>
+    </header>
+    <!-- /////////////////////////////////// SECTION 1 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| Le projet RéSISTeCC</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 2 /////////////////////////////////// -->
+    <section class="flex-gap">
+        <div class="img-container">
+            <img style="width: 100%;" src="./../data/resisteccImage4.png" alt="resistec">
+        </div>
+        <div style="flex: 2;">
+            <h2>RéSISTeCC : se préparer aux cyber-attaques</h2>
+            <span>Le projet RéSISTeCC, piloté par l'Iriaf de l'université de Poitiers, vise à développer une offre de
+                formation continue en gestion des crises cyber, adaptée aux besoins des petites entités
+                socio-économiques. L'objectif est de renforcer leur cyber résilience, c'est-à-dire leur capacité à
+                poursuivre leurs activités malgré une attaque. <br> <br>
+
+                Les objectifs principaux sont d'aider les organisations à réagir rapidement et efficacement à une
+                cyberattaque, tout en élaborant des plans de continuité d'activité robustes, testés à chaque niveau :
+                pilotage stratégique, réponse informatique, gestion médiatique et reprise d'activités.
+                <br> <br>
+                Le projet associe trois partenaires : l'Iriaf, Crisalyde (expertise en exercices de crise
+                organisationnelle et gestion médiatique), et Diateam (spécialiste des cyber range et formation
+                technique). À terme, le projet prévoit le développement d’une plateforme immersive et interactive sera
+                proposée, allant de modules courts à un Diplôme universitaire.</span>
+            <br> <br>
+            <span style="font-style: italic;">Financements : Banque des territoires</span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 3 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| L'EXERCICE RéSISTeCC</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 4 /////////////////////////////////// -->
+    <section class="flex-gap">
+        <div class="img-container">
+            <img style="width: 100%;" src="./../data/resisteccImage5.png" alt="resistec">
+        </div>
+        <div style="flex: 2;">
+
+            <span>L’exercice RéSISTeCC vise à répondre à un enjeu majeur : améliorer la coordination entre les équipes
+                techniques (SSI) et le niveau stratégique dans la gestion des crises cyber. L’innovation clé de cet
+                exercice est de simuler en temps réel ces deux dimensions.
+                <br> <br>
+                L’exercice RéSISTeCC repose sur les principes classiques d’un exercice de crise simulé en conditions
+                réelles, destiné à la cellule de crise stratégique de l’organisme participant. L’animation de l’exercice
+                est assurée par une équipe comprenant un directeur, responsable du bon déroulement du scénario et de
+                l’atteinte des objectifs, ainsi que des animateurs en charge des aspects stratégiques et techniques
+                (SSI). Un expert local, complice de l’animation, garantit la crédibilité de l’évolution du scénario.
+                <br> <br>
+                En faisant travailler ensemble la cellule de crise stratégique et la cellule technique SSI, l’exercice
+                permet de tester l’efficacité de la réponse globale à une crise, en alliant la prise de décisions
+                stratégiques et la résolution technique des incidents. Cette approche intégrée renforce la cohérence des
+                actions, améliore la communication inter-équipe, et garantit une réaction plus rapide et coordonnée lors
+                de véritables situations de crise.
+                <br> <br>
+                <strong>Le dispositif d'exercice :</strong> Une cellule de crise stratégique, une équipe IT mises en
+                relation avec avec
+                une cellule d'animation via un dispositif informatique, et des moyens classiques de communication.
+                <br> <br>
+                <strong>Le dispositif d'animation :</strong> Un animateur pour suivre la dimension stratégique ; un
+                animateur pour suivre
+                la dimension IT ; un observateur qui valide l'atteinte des objectifs pédagogiques.</span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 5 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| Schéma du dispositif de l'exercice</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 6 /////////////////////////////////// -->
+    <section>
+        <img style="width: 100%;" src="./../data/resisteccImage6.png" alt="resistecc">
+    </section>
+    <!-- /////////////////////////////////// SECTION 7 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+            <h2>| Le Cyber Range</h2>
+        </section>
+    </div>
+    <!-- /////////////////////////////////// SECTION 8 /////////////////////////////////// -->
+    <section class="flex-gap">
+        <div style="flex: 2;">
+            <img style="width: 100%;" src="./../data/resisteccImage7.jpg" alt="resistec">
+        </div>
+        <div style="flex: 1;">
+            <span>Le
+                <a href="https://www.diateam.net/fr/cyber-range-hybride/" target="_blank">Cyber Range</a>
+                , développé par Diateam, est une plateforme d'entraînement conçue pour simuler des
+                environnements informatiques réels et permettre la gestion de scénarios de cyberattaque. Il offre un
+                cadre sécurisé pour tester et améliorer vos compétences en réponse à des incidents, sans impact sur des
+                systèmes réels. Pour l'exercice LOREM, une architecture SI générique a été conçue, proche de ce que l'on
+                pourrait trouver dans le secteur d'activité des participants. Cependant, elle n'est pas une copie exacte
+                de vos infrastructures existantes, garantissant ainsi une approche sécurisée tout en permettant de
+                travailler dans un environnement représentatif et réaliste.
+                <br> <br>
+                Dans cet environnement, vous aurez accès à un réseau virtuel, aux serveurs, aux postes utilisateurs,
+                ainsi qu'aux services critiques tels que la gestion des bases de données, la messagerie, et la
+                surveillance des activités réseau. Cette infrastructure est spécifiquement conçue pour vous confronter à
+                des scénarios d'attaques, tout en respectant les meilleures pratiques de sécurité.</span>
+        </div>
+    </section>
+    <!-- /////////////////////////////////// SECTION 9 /////////////////////////////////// -->
+    <div class="yellow-background">
+        <section class="section-yellow-two">
+        </section>
+    </div>
+    <!-- /////////////////////////////////// FOOTER /////////////////////////////////// -->
+    <footer>
+        <section class="logo-section">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo1.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo2.png" alt="poitiers">
+            <img style="flex: 1; object-fit: contain;" src="./../data/logo3.png" alt="poitiers">
+        </section>
+        <section class="footer">
+            <span><strong>Crisalyde </strong>| Octobre 2024</span>
+            <span>Equipe projet RéSISTeCC</span>
+            <span><strong>C2 DIFFUSION RESTREINTE</strong></span>
+        </section>
+    </footer>
+    <script src="./../script.js"></script>
+</body>
+
+</html>
