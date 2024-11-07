@@ -57,3 +57,21 @@ function toggleDropdown(element) {
   dropdownContent.classList.toggle("open");
   dropdownArrow.classList.toggle("rotated");
 }
+
+window.onscroll = function () {
+  const backToTopBtn = document.getElementById("backToTopBtn");
+  if (window.scrollY > 200) {
+    // Afficher le bouton après avoir scrollé 200px
+    backToTopBtn.style.display = "flex";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+};
+
+// Fonction pour remonter en haut de la page
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
